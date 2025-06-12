@@ -5,11 +5,20 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -23,9 +32,33 @@ h2 {
 
 main {
     padding: 30px 15%;
+    line-height: 1.5;
+    flex: 2;
 }
 
 li {
     margin: 10px 0;
     list-style-position: inside;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px 5%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    
 }
